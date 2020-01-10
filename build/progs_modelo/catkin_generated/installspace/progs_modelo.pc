@@ -1,0 +1,8 @@
+prefix=/home/jess/learnbotics_ws/install
+
+Name: progs_modelo
+Description: Description of progs_modelo
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/jess/learnbotics_ws/install/lib 
+Requires: 

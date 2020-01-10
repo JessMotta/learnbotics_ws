@@ -1,0 +1,8 @@
+prefix=/home/jess/learnbotics_ws/devel
+
+Name: dynamixel
+Description: Description of dynamixel
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/jess/learnbotics_ws/devel/lib 
+Requires: 

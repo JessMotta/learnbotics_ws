@@ -1,0 +1,2 @@
+dynamixel:progs_modelo:pysdf
+-DCATKIN_DEVEL_PREFIX=/home/jess/learnbotics_ws/devel -DCMAKE_INSTALL_PREFIX=/home/jess/learnbotics_ws/install -G Unix Makefiles

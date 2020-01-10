@@ -1,0 +1,8 @@
+prefix=/home/jess/learnbotics_ws/devel
+
+Name: pysdf
+Description: Description of pysdf
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/jess/learnbotics_ws/devel/lib 
+Requires: 

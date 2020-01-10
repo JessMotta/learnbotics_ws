@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+<robot name="Learnbotics2_Sem_sensores">
+  <joint name="Learnbotics2_Sem_sensores__link_1_JOINT_0" type="ball">
+    <parent link="Learnbotics2_Sem_sensores__link_1"/>
+    <child link="Learnbotics2_Sem_sensores__link_3"/>
+    <origin rpy="0  0  0" xyz="0.04083  0.03063 -0.03728"/>
+    <axis xyz="0  0  0"/>
+    <limit effort="0" lower="0" upper="0" velocity="0"/>
+  </joint>
+  <joint name="Learnbotics2_Sem_sensores__link_1_JOINT_1" type="revolute">
+    <parent link="Learnbotics2_Sem_sensores__link_1"/>
+    <child link="Learnbotics2_Sem_sensores__link_2_clone"/>
+    <origin rpy="0  0  0" xyz="-0.04505  0.0923  -0.00785"/>
+    <axis xyz="0  1  0"/>
+    <limit effort="-1.0" lower="-1.79769e+308" upper="1.79769e+308" velocity="-1.0"/>
+  </joint>
+  <joint name="Learnbotics2_Sem_sensores__link_1_JOINT_2" type="revolute">
+    <parent link="Learnbotics2_Sem_sensores__link_1"/>
+    <child link="Learnbotics2_Sem_sensores__link_2"/>
+    <origin rpy="0  0  0" xyz="-0.04505 -0.03071 -0.00785"/>
+    <axis xyz="0  1  0"/>
+    <limit effort="-1.0" lower="-1.79769e+308" upper="1.79769e+308" velocity="-1.0"/>
+  </joint>
+  <link name="Learnbotics2_Sem_sensores__link_1">
+    <inertial>
+      <mass value="0.315"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="0.00063153" ixy="0" ixz="0" iyy="0.00118903" iyz="0" izz="0.00098783"/>
+    </inertial>
+    <collision name="Learnbotics2_Sem_sensores__collision">
+      <origin rpy="0  0  0" xyz="0.01154  0.03079  0.02866"/>
+      <geometry>
+        <mesh filename="package:/stl/Body.stl" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <visual name="Learnbotics2_Sem_sensores__visual">
+      <origin rpy="0  0  0" xyz="0.01154  0.03079  0.02866"/>
+      <geometry>
+        <mesh filename="package:/stl/Body.stl" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="Learnbotics2_Sem_sensores__link_2">
+    <inertial>
+      <mass value="0.027"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="1.095e-05" ixy="0" ixz="0" iyy="2.137e-05" iyz="0" izz="1.095e-05"/>
+    </inertial>
+    <collision name="Learnbotics2_Sem_sensores__collision">
+      <origin rpy="1.5707  0      0" xyz="0  0  0"/>
+      <geometry>
+        <mesh filename="package:/stl/Wheel.stl" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <visual name="Learnbotics2_Sem_sensores__visual">
+      <origin rpy="1.5707  0      0" xyz="0  0  0"/>
+      <geometry>
+        <mesh filename="package:/stl/Wheel.stl" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="Learnbotics2_Sem_sensores__link_2_clone">
+    <inertial>
+      <mass value="0.027"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="1.095e-05" ixy="0" ixz="0" iyy="2.137e-05" iyz="0" izz="1.095e-05"/>
+    </inertial>
+    <collision name="Learnbotics2_Sem_sensores__collision">
+      <origin rpy="1.5707  0      3.1415" xyz="0  0  0"/>
+      <geometry>
+        <mesh filename="package:/stl/Wheel.stl" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <visual name="Learnbotics2_Sem_sensores__visual">
+      <origin rpy="1.5707  0      3.1415" xyz="0  0  0"/>
+      <geometry>
+        <mesh filename="package:/stl/Wheel.stl" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="Learnbotics2_Sem_sensores__link_3">
+    <inertial>
+      <mass value="0.004"/>
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <inertia ixx="1.7e-07" ixy="0" ixz="0" iyy="1.7e-07" iyz="0" izz="1.7e-07"/>
+    </inertial>
+    <collision name="Learnbotics2_Sem_sensores__collision">
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <geometry>
+        <mesh filename="package:/stl/Esfera 15mm.stl" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <visual name="Learnbotics2_Sem_sensores__visual">
+      <origin rpy="0  0  0" xyz="0  0  0"/>
+      <geometry>
+        <mesh filename="package:/stl/Esfera 15mm.stl" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>
